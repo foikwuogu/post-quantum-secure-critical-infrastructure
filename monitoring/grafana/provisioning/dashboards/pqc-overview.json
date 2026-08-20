@@ -1,0 +1,17 @@
+{
+  "annotations": {"list": []},
+  "editable": true,
+  "graphTooltip": 0,
+  "panels": [
+    {"type":"stat","title":"Total assets","gridPos":{"h":4,"w":6,"x":0,"y":0},"targets":[{"expr":"pqc_inventory_assets_total","refId":"A"}]},
+    {"type":"stat","title":"High quantum risk assets","gridPos":{"h":4,"w":6,"x":6,"y":0},"targets":[{"expr":"pqc_inventory_high_risk_assets","refId":"A"}]},
+    {"type":"stat","title":"Average risk score","gridPos":{"h":4,"w":6,"x":12,"y":0},"targets":[{"expr":"pqc_inventory_average_risk_score","refId":"A"}]},
+    {"type":"stat","title":"Average readiness score","gridPos":{"h":4,"w":6,"x":18,"y":0},"targets":[{"expr":"pqc_inventory_average_readiness_score","refId":"A"}]},
+    {"type":"gauge","title":"PQC capabilities","gridPos":{"h":8,"w":8,"x":0,"y":4},"fieldConfig":{"defaults":{"min":0,"max":1},"overrides":[]},"targets":[{"expr":"pqc_capability_available","refId":"A"}]},
+    {"type":"table","title":"Asset quantum risk and readiness","gridPos":{"h":8,"w":16,"x":8,"y":4},"targets":[{"expr":"pqc_asset_quantum_risk_score","format":"table","instant":true,"refId":"A"},{"expr":"pqc_asset_readiness_score","format":"table","instant":true,"refId":"B"}]}
+  ],
+  "schemaVersion": 39,
+  "title": "PQC Infrastructure Overview",
+  "uid": "pqc-overview",
+  "version": 1
+}

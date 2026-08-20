@@ -243,6 +243,22 @@ Open:
 
 http://127.0.0.1:8001/
 
+### Grafana monitoring
+
+The Docker Compose stack also provisions Prometheus and Grafana. Start the full
+stack with:
+
+```bash
+docker-compose up --build
+```
+
+Open Grafana at http://127.0.0.1:3001/ and select the **PQC Infrastructure
+Overview** dashboard. The default local login is `admin` / `admin`.
+
+The dashboard displays total assets, high-risk assets, average risk,
+readiness, asset-level risk scores, and ML-KEM/ML-DSA availability. Prometheus
+scrapes the application metrics at `/metrics`.
+
 ## API
 
 ### Health
