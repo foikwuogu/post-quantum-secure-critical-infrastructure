@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.db
+*.sqlite
+*.sqlite3
+.env
+.vscode/
+.DS_Store
+tmp_crypto/
+benchmarks/*.json

@@ -1,0 +1,14 @@
+services:
+  pqc-platform:
+    build: .
+    container_name: post-quantum-critical-infrastructure
+    ports:
+      - "8001:8001"
+    environment:
+      DATABASE_URL: sqlite:///./data/pqc.db
+      OPENSSL_BIN: openssl
+    volumes:
+      - pqc-data:/app/data
+
+volumes:
+  pqc-data:

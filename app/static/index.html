@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Post-Quantum Critical Infrastructure</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>Post-Quantum Secure Critical Infrastructure</h1>
+    <p>Independent laboratory • HNDL • ML-KEM • ML-DSA • Hybrid Migration</p>
+  </div>
+  <span id="openssl">Checking OpenSSL…</span>
+</header>
+
+<main>
+<section class="hero">
+  <h2>Quantum-readiness migration laboratory</h2>
+  <p>Compare classical, PQC, and hybrid cryptographic profiles using measured local execution.</p>
+</section>
+
+<section class="panel">
+<h2>Cryptographic capabilities</h2>
+<pre id="caps">Loading…</pre>
+</section>
+
+<section class="panel">
+<h2>Migration inventory</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Asset</th><th>Zone</th><th>Current crypto</th><th>Secrecy</th><th>Migration</th><th>Criticality</th><th>Quantum risk</th><th>Readiness</th></tr></thead>
+<tbody id="inventory"></tbody>
+</table>
+</div>
+</section>
+
+<section class="panel">
+<h2>Cryptographic envelope laboratory</h2>
+<div class="buttons">
+<button data-mode="classical">Classical</button>
+<button data-mode="pqc">PQC</button>
+<button data-mode="hybrid">Hybrid</button>
+</div>
+<pre id="cryptoResult">Run a profile to create an encrypted synthetic critical-operation message.</pre>
+</section>
+
+<section class="panel">
+<h2>Performance benchmark</h2>
+<button id="benchmark">Run 3-iteration benchmark</button>
+<pre id="benchmarkResult">Measured values will appear here.</pre>
+</section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>
