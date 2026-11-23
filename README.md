@@ -229,7 +229,7 @@ Or directly:
 python scripts/benchmark.py --iterations 5
 ```
 
-The benchmark reports measured values from the local machine. Do not copy these numbers into a paper or NIW petition unless you actually ran the benchmark and document the environment.
+The benchmark reports measured values from the local machine. Do not copy these numbers into a paper unless you actually ran the benchmark and document the environment.
 
 ## Docker
 
